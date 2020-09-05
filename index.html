@@ -3,26 +3,35 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
         <title>The Johnpiano</title>
     </head>
     <body>
-        <div class="keyboard">
-            <div class="note" data-eventKey="68">
-                <kbd>D</kbd>
-                <span class="scale">Do</span>
-            </div>
+        <h1>The "Johnpiano"</h1>
+        <div class="container">
+            
+            <img src="images/closed.png">
+            
+            <p>Press these keys on your computer keyboard:</p>
+            
+            <div class="notes">
 
-            <div class="note" data-eventKey="82">
-                <kbd>R</kbd>
-                <span class="scale">Re</span>
-            </div>
+                <div class="oneNote" data-eventKey="68">
+                    <kbd>D</kbd>
+                    <span class="scale">Do</span>
+                </div>
 
-            <div class="note" data-eventKey="77">
-                <kbd>M</kbd>
-                <span class="scale">Mi</span>
-            </div>
-        </div>
+                <div class="oneNote" data-eventKey="82">
+                    <kbd>R</kbd>
+                    <span class="scale">Re</span>
+                </div>
 
+                <div class="oneNote" data-eventKey="77">
+                    <kbd>M</kbd>
+                    <span class="scale">Mi</span>
+                </div>
+            </div>
+        </div> 
         <audio data-eventKey="68" src="sounds/la C.wav"></audio>
         <audio data-eventKey="82" src="sounds/la D.wav"></audio>
         <audio data-eventKey="77" src="sounds/la E.wav"></audio>
