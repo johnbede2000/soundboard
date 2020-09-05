@@ -24,9 +24,11 @@ h1 {
     margin: 0;
 }
 
-img {
+.img {
     height: 30vh;
-    margin: 0 auto;
+    width: 100%;
+    background: url('images/closed.png') no-repeat center center;
+    background-size: contain;
 }
 
 .keys {
@@ -41,7 +43,7 @@ kbd {
     border-radius: 0.5rem;
     margin: 2rem;
     padding: 1rem 1.5rem;
-    transition: all 0.5s;
+    transition: all 0.7s;
 }
 
 .singing {
