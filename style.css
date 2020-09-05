@@ -41,7 +41,7 @@ kbd {
     border-radius: 0.5rem;
     margin: 2rem;
     padding: 1rem 1.5rem;
-    transition: all 1s ease;
+    transition: all 0.5s;
 }
 
 .singing {

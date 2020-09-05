@@ -1,5 +1,3 @@
-window.addEventListener('keydown', johnPiano);
-
 function johnPiano(e) {
     const sing = document.querySelector(`audio[data-eventKey='${e.keyCode}']`);
     const key = document.querySelector(`kbd[data-eventKey='${e.keyCode}']`);
@@ -11,9 +9,17 @@ function johnPiano(e) {
     key.classList.add('singing');
 }
 
-const kbds = document.querySelectorAll('kbd');
-kbds.forEach(removeTransition);
+window.addEventListener('keydown', johnPiano);
 
-function removeTransition {
-    
+const kbds = document.querySelectorAll('kbd');
+kbds.forEach(listenTranEnd);
+
+function listenTranEnd(currentValue) {
+    currentValue.addEventListener('transitionend', removeTransition);
+}
+
+function removeTransition(e) {
+    if (e.propertyName == 'transform') {
+        this.classList.remove('singing');
+    }
 }
