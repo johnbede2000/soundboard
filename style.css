@@ -50,7 +50,7 @@ p {
 .playing {
     transform: scale(1.1);
     border-color: orange;
-    box-shadow: 5px 10px 8px gray;
+    box-shadow: 5px 10px 8px black;
 }
 
 kbd {
