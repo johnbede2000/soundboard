@@ -31,6 +31,10 @@ h1 {
     background-size: contain;
 }
 
+.open {
+    background-image: url('images/open.png')
+}
+
 .keys {
     display: flex;
     align-items: center;
