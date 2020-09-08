@@ -14,7 +14,23 @@ function johnPiano(e) {
     face.classList.add('open');
 }
 
+function clickFunction(e) {
+    let match = document.querySelector(`audio[src='sounds/la ${e.target.innerText}.wav']`);
+
+    if (match==null) {
+        return;
+    }
+    match.currentTime = 0;
+    match.play();
+    e.target.classList.add('singing');
+    face.classList.add('open');
+}
+
 window.addEventListener('keydown', johnPiano);
+
+for (let i = 0; i < kbds.length; i++) {
+    kbds[i].addEventListener('click', clickFunction);
+}
 
 function listenTranEnd(currentValue) {
     currentValue.addEventListener('transitionend', removeTransition);
