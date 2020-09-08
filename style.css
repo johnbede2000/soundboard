@@ -33,6 +33,11 @@ h1 {
     font-size: 10vh;
     margin: 0;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    text-align: center;
 }
 
 .img {
@@ -48,6 +53,7 @@ h1 {
 
 .para {
     font-size: 5vh;
+    text-align: center;
 }
 
 .keys {
