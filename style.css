@@ -13,7 +13,6 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     margin: 0;
 }
 
@@ -23,7 +22,7 @@ a {
     align-self: flex-start;
     color: black;
     padding-top: 1rem;
-    padding-left: 1rem;
+    padding-left: 3%;
 }
 
 a:visited {
@@ -33,33 +32,28 @@ a:visited {
 h1 {
     font-size: 10vh;
     margin: 0;
-    text-align: center;
-    flex-basis: 10%;
     text-transform: uppercase;
 }
 
 .img {
-    background: url('images/closed.png') no-repeat center center;
+    background: url('images/closed.svg') no-repeat center center;
     background-size: contain;
     min-height: 30vh;
     width: 100%;
 }
 
 .open {
-    background-image: url('images/open.png')
+    background-image: url('images/open.svg');
 }
 
 .para {
-    flex-basis: 10%;
     font-size: 5vh;
-    text-align: center;
 }
 
 .keys {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-basis: 50%;
 }
 
 kbd {
@@ -68,7 +62,7 @@ kbd {
     border-radius: 0.5rem;
     margin: 2rem;
     padding: 1rem 1.5rem;
-    transition: all 0.7s;
+    transition: all 0.5s;
 }
 
 .singing {
